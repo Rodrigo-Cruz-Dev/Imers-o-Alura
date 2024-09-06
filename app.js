@@ -34,7 +34,8 @@ function pesquisar() {
   </div>
       `;
     }
-   if (!resultados) { resultados = "Nada foi encontrado"}
-    // Atribui o HTML gerado para a seção de resultados
+    
+  }
+   if (resultados.length == 0) {resultados = "Nada foi encontrado"}
     section.innerHTML = resultados;
-  }}
+  }
